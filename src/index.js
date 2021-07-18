@@ -5,10 +5,6 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import {
 	BrowserRouter as Router,
-	NavLink,
-	Switch,
-	Route,
-	useLocation,
 } from "react-router-dom";
 
 ReactDOM.render(

@@ -49,7 +49,10 @@ const Home = () => {
         className="bg"
         id="Home"
       >
-        <h1 className="region">Middle India</h1>
+        <h1 className="regio title">India</h1>
+        <video className="bidio" autoplay muted loop id="myVideo">
+          <source src="../assets/bg.mp4" type="video/mp4" />
+        </video>
       </motion.div>
     </>
   );

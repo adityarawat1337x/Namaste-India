@@ -1,7 +1,5 @@
 import React from "react";
 import {
-	BrowserRouter as Router,
-	NavLink,
 	Switch,
 	Route,
 	useLocation,

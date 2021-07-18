@@ -1,8 +1,8 @@
 import React from "react";
 import "./styles.css";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
-import styled, { isStyledComponent } from "styled-components";
+import styled from "styled-components";
 import { north } from "./Database";
 
 const Container = styled.div`

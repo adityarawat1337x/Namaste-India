@@ -1,12 +1,16 @@
+body {
+	overflow-y: hidden;
+}
+
 .bg {
-	background-image: url("https://source.unsplash.com/05ujZtstwXQ");
+	background-image: url("https://source.unsplash.com/TApAkERW5pQ");
 	width: 100vw;
 	height: 100vh;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-.bidio{
+.bidio {
 	width: 100vw;
 	height: 100vh;
 	object-fit: cover;
@@ -101,25 +105,33 @@
 	margin-left: 20px;
 	animation-name: textShow;
 	animation-duration: 1s;
-    
+}
+
+.title {
+	font-size: 11em;
+	font-weight: 900;
+	color: rgba(255, 255, 255, 0.664);
+	position: absolute;
+	bottom: 20px;
+	margin-left: 40px;
 }
 
 .northh1 {
 	color: rgb(255, 255, 255);
 }
 .southh1 {
-color: rgb(80, 163, 196);
+	color: rgb(80, 163, 196);
 }
 .easth1 {
 	color: rgb(240, 86, 86);
 }
 .westh1 {
-		color: rgb(62, 212, 99);
+	color: rgb(62, 212, 99);
 }
 
-.mainpagetitle{
+.mainpagetitle {
 	position: absolute;
-	bottom:20px;
+	bottom: 20px;
 	left: 10%;
 	font-size: 11em;
 	font-weight: 900;
