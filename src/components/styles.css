@@ -6,6 +6,12 @@
 	background-size: cover;
 }
 
+.bidio{
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+}
+
 .east {
 	background-image: url("https://source.unsplash.com/RugN1OsUwHM");
 }
@@ -109,4 +115,13 @@ color: rgb(80, 163, 196);
 }
 .westh1 {
 		color: rgb(62, 212, 99);
+}
+
+.mainpagetitle{
+	position: absolute;
+	bottom:20px;
+	left: 10%;
+	font-size: 11em;
+	font-weight: 900;
+	color: white;
 }
