@@ -3,7 +3,7 @@ import "./styles.css"
 import { motion, AnimatePresence } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import styled from 'styled-components';
-import { north } from './Database';
+import { north, unsp } from './Database';
 
 const Container = styled.div`
   display: flex;
@@ -15,7 +15,7 @@ const Container = styled.div`
 
 const Block = styled.div`
   scroll-snap-align: start;
-  background-size: cover;
+  background-size: cover;position:relative;
 `;
 
 const Item = styled.div`
@@ -31,22 +31,36 @@ const Item = styled.div`
 
 const About = styled.div`
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position:absolute;
+  top:70%;
+  left:20px;
   color: #fff;
-  font-family: 'Kaushan Script';
-  /* backdrop-filter: blur(2px); */
-  padding: 20px;
-  font-size: 22px;
-  background-color: rgba(0, 0, 0, 0.4);
+  font-size:100px;
+  padding:20px;
+  color:rgb(255,255,255);
+  font-weight: 900;
+
+ @keyframes textShow {
+	from {
+		opacity: 0;
+		left: -100%;
+	}
+	to {
+		opacity: 1;
+		left: 0%;
+	}
+    }
+	animation-name: textShow;
+	animation-duration: 1s;
 `;
 
-const Place = ({ s, d }) => {
+
+
+const Place = ({ s, d, city }) => {
     return (
         <Block>
             <Item s={s}>
-                <About>{d}</About>
+                <About>{city}</About>
             </Item>
         </Block>
     );
