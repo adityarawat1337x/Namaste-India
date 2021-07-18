@@ -49,7 +49,7 @@ const north = [
 	},
 ];
 
-const unsp = [
+const east = [
 	{
 		place: "New Delhi, NCR",
 		dp: "https://source.unsplash.com/random/1920x1080",
