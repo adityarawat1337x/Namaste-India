@@ -1,0 +1,51 @@
+.bg {
+	background-image: url("https://source.unsplash.com/05ujZtstwXQ");
+	width: 100vw;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.east {
+	background-image: url("https://source.unsplash.com/RugN1OsUwHM");
+}
+.west {
+	background-image: url("https://source.unsplash.com/GdlEMsUsOy0");
+}
+.north {
+	background-image: url("https://source.unsplash.com/rqgquI7mBbA");
+}
+.south {
+	background-image: url("https://source.unsplash.com/ldAMcAiZ5v4");
+}
+
+.arrow {
+	position: absolute;
+    background-color: rgba(236, 236, 236, 0.315);
+	width: 80px;
+	height: 80px;
+    z-index: 1000;
+    border-radius:50%;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+.up {
+    top:10px;
+    left:50vw;
+}
+.down {
+    top:90vh;
+    left:50vw;
+}
+.left {
+    top:50vh;
+    left:10px;
+}
+.right {
+    top:50vh;
+    right:10px;
+}
