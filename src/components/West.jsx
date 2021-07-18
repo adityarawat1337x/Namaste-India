@@ -25,10 +25,10 @@ const West = () => {
         duration: .5
     };
     return (<><NavLink className="arrow left" to="/" exact>
-        Home
+        🡨
     </NavLink>
         <motion.div style={{ position: "absolute" }} variants={pageVariant} transition={pageTransition} initial="initial" animate="in" exit="out" className="bg west" id="West">
-            {'>'}
+            <h1 className="region">West India</h1>
         </motion.div></>
     );
 };

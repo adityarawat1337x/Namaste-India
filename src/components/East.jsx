@@ -22,14 +22,14 @@ const East = () => {
     const pageTransition = {
         type: "tween",
         ease: "easeOut",
-        duration:.5
+        duration: .5
     };
 
     return (<><NavLink className="arrow right" to="/" exact>
-        Home
+        🡪
     </NavLink>
         <motion.div style={{ position: "absolute" }} variants={pageVariant} transition={pageTransition} initial="initial" animate="in" exit="out" className="bg east" id="East">
-            {"<"}
+            <h1 className="region">East India</h1>
         </motion.div></>
     );
 };

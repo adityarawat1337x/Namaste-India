@@ -27,19 +27,20 @@ const Home = () => {
 
     return (<>
         <NavLink className="arrow left" to="/east" exact>
-            East
+            🡨
         </NavLink>
         <NavLink className="arrow right" to="/west" exact>
-            West
+            🡪
         </NavLink>
         <NavLink className="arrow up" to="/north" exact>
-            North
+            🡡
         </NavLink>
         <NavLink className="arrow down" to="/south" exact>
-            South
+            🡫
         </NavLink>
 
         <motion.div style={{ position: "absolute" }} variants={pageVariant} transition={pageTransition} initial="initial" animate="in" exit="out" className="bg" id="Home">
+            <h1 className="region">Middle India</h1>
         </motion.div></>
     );
 };

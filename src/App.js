@@ -20,7 +20,7 @@ function App() {
 	return (
 		<div style={{ position: "relative" }}>
 		
-			<AnimatePresence onExitComplete>
+			<AnimatePresence>
 				<Switch location={location} key={location.pathname}>
 					<Route path="/" exact>
 						<Home />

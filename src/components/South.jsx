@@ -25,10 +25,10 @@ const South = () => {
         duration: .5
     };
     return (<><NavLink className="arrow up" to="/" exact>
-        Home
+        🡩
     </NavLink>
         <motion.div style={{ position: "absolute" }} variants={pageVariant} transition={pageTransition} initial="initial" animate="in" exit="out" className="bg south" id="South">
-            South
+            <h1 className="region">South India</h1>
         </motion.div></>
     );
 };

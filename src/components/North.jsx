@@ -27,10 +27,10 @@ const North = () => {
     };
 
     return (<><NavLink className="arrow down" to="/" exact>
-        Home
+        🡫
     </NavLink>
         <motion.div style={{ position: "absolute" }} variants={pageVariant} transition={pageTransition} initial="initial" animate="in" exit="out" className="bg north" id="North">
-            {"^"}
+            <h1 className="region">North India</h1>
         </motion.div></>
     );
 };
