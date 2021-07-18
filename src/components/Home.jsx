@@ -40,7 +40,10 @@ const Home = () => {
         </NavLink>
 
         <motion.div style={{ position: "absolute" }} variants={pageVariant} transition={pageTransition} initial="initial" animate="in" exit="out" className="bg" id="Home">
-            <h1 className="region">Middle India</h1>
+            <h1 className="region mainpagetitle">India</h1>
+            {/* <video className="bidio" autoplay muted loop id="myVideo">
+                <source src="https://firebasestorage.googleapis.com/v0/b/todoist-e3306.appspot.com/o/monsoon.mp4?alt=media&token=9694c2cc-f601-4116-bce2-53d0bb95007d" type="video/mp4" />
+            </video> */}
         </motion.div></>
     );
 };
