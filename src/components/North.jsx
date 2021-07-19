@@ -6,6 +6,7 @@ import styled from "styled-components";
 import { north } from "./Database";
 import ArrowDownwardRoundedIcon from '@material-ui/icons/ArrowDownwardRounded';
 import Carousel from "./Carousel";
+
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -16,6 +17,7 @@ const Container = styled.div`
 
 const Block = styled.div`
   scroll-snap-align: start;
+	position: relative;
   background-size: cover;
 `;
 
@@ -31,16 +33,28 @@ const Item = styled.div`
 `;
 
 const About = styled.div`
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-family: "Kaushan Script";
-  /* backdrop-filter: blur(2px); */
-  padding: 20px;
-  font-size: 22px;
-  background-color: rgba(0, 0, 0, 0.4);
+	height: 100%;
+	position: absolute;
+	top: 70%;
+	left: 20px;
+	color: #fff;
+	font-size: 100px;
+	padding: 20px;
+	color: rgb(255, 255, 255);
+	font-weight: 900;
+
+	@keyframes textShow {
+		from {
+			opacity: 0;
+			left: -100%;
+		}
+		to {
+			opacity: 1;
+			left: 0%;
+		}
+	}
+	animation-name: textShow;
+	animation-duration: 1s;
 `;
 
 const Place = (props) => {
@@ -97,7 +111,6 @@ const North = () => {
         className="bg north"
         id="North"
       >
-        <h1 className="region northh1">North India</h1>
         <Container>
           {north.map((city, index) => (
             <Place
@@ -105,7 +118,7 @@ const North = () => {
               city={city.place}
               s={city.dp}
               d={city.desc}
-              attractions={city.attractions}
+              att={city.attractions}
             />
           ))}
         </Container>

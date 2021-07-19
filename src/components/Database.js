@@ -272,7 +272,7 @@ const west = [
 					"Gadisar Lake is an artificial lake. It is located in the southern part of the city of Jaisalmer. This lake was built by the founder king of Jaisalmer Rawal Jaisal. Due to this, it was also called Jaisalasar Lake earlier. At that time it was the only water source of the Jaisalmer region. Later the lake was rebuilt by Gadsi Singh[6] and after that it was renamed as Gadisar Lake. Presently, there are many tourists from abroad. The lake also has many chhatris and shrines of hindu Gods and goddes ",
 			},
 			{
-				attraction: "Desert",
+				attraction: "Sand Dunes",
 				dp: "https://i.ibb.co/njXkcYn/desert.jpg",
 				desc:
 					"The medieval fortress town of Jaisalmer rises out of the remote deserts of Rajasthan, like a city at the very end of the world. According to mythology, after the epic battle of the Mahabharata, Lord Krishna and the Pandav hero, Bheem, came here for a ceremony.",

@@ -114,7 +114,7 @@ const West = () => {
 				<h1 className="region westh1">West India</h1>{" "}
 				<Container>
 					{east.map((city, index) => (
-						<Place key={index} city={city.place} s={city.dp} d={city.desc} />
+						<Place key={index} city={city.place} s={city.dp} d={city.desc} att={city.attractions} />
 					))}
 				</Container>
 			</motion.div>

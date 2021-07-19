@@ -97,7 +97,6 @@ const Place = (props) => {
     );
 };
 
-// console.log(north);
 const East = () => {
     return (
         <>

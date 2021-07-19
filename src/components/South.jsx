@@ -102,7 +102,7 @@ const South = () => {
         <motion.div style={{ position: "absolute" }} variants={pageVariant} transition={pageTransition} initial="initial" animate="in" exit="out" className="bg south" id="South">
             <h1 className="region southh1">South India</h1> <Container>
                 {south.map((city, index) => (
-                    <Place key={index} city={city.place} s={city.dp} d={city.desc} />
+                    <Place key={index} city={city.place} s={city.dp} d={city.desc} att={city.attractions} />
                 ))}
             </Container>
         </motion.div></>
