@@ -39,7 +39,7 @@ const north = [
 		],
 	},
 	{
-		place: "Agra, Uttar Pradesh",
+		place: "Agra",
 		dp: agrabg,
 		desc:
 			"Agra, home to the famous Taj Mahal, counts among the top places to visit in North India and for all the right reasons. The historical city in Uttar Pradesh is a medley of grand monuments, exceptional architecture, and mesmerizing sights and sounds. It boasts of three UNESCO World Heritage sites, several enticing gardens, vibrant local markets, emporiums, and lip-smacking street food. Agra is also part of the famous Golden-Triangle circuit",
@@ -65,7 +65,7 @@ const north = [
 		],
 	},
 	{
-		place: "Shimla, Himachal Pradesh",
+		place: "Shimla",
 		dp: shimlabg,
 		desc:
 			"Shimla, the picturesque capital city of Himachal Pradesh, is located at the foothills of the Himalayas and offers a unique travel experience with its snow-capped mountains, forests, lush green valleys, placid lakes, and pleasant climatic conditions. Apart from these natural attractions, the region also boasts of several man-made wonders including religious places, historical structures, museums, and the lively Mall Road.",

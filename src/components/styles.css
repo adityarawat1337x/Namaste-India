@@ -94,7 +94,7 @@ body {
 	}
 	to {
 		opacity: 1;
-		left: 0%;
+		left: 50%;
 	}
 }
 
@@ -110,7 +110,7 @@ body {
 .title {
 	font-size: 10em;
 	font-weight: 900;
-	color: rgba(255, 255, 255, 0.664);
+	color: rgba(255, 255, 255, 0.842);
 	position: absolute;
 	text-align: center;
 	top: 30%;

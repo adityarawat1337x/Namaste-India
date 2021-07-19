@@ -37,8 +37,8 @@ const Item = styled.div`
 const About = styled.div`
 	height: 100%;
 	position: absolute;
-	top: 70%;
-	left: 20px;
+top: 50%;
+	left: 6%;
 	color: #fff;
 	font-size: 100px;
 	padding: 20px;
