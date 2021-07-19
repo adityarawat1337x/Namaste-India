@@ -125,3 +125,77 @@ color: rgb(80, 163, 196);
 	font-weight: 900;
 	color: white;
 }
+
+
+.carousel {
+  width: 100vw;
+  height: 200px;
+}
+.carousel::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+
+@keyframes display {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+}
+
+.carousel{
+  position: relative;
+  width: 100vw;
+  height: 300px;
+  margin-top: 15vh;
+}
+
+.carousel > .box{
+  position: absolute;
+  top: 0;
+  left: calc(50% - 100px);
+  opacity: 0;
+  animation: display 10s infinite;
+}
+
+.box:nth-child(2) {
+  animation-delay: 2s;
+}
+.box:nth-child(3) {
+  animation-delay: 4s;
+}
+
+
+.box {
+  flex: 0 0 auto;
+  margin: 20px 40px;
+  height: 200px;
+  min-width: 300px;
+}
+
+.carousel #one {
+  background-color: red;
+}
+.carousel #two {
+  background-color: green;
+}
+.carousel #three {
+  background-color: blue;
+}
