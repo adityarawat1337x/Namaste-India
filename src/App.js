@@ -1,14 +1,11 @@
 import React from "react";
-import {
-	Switch,
-	Route,
-	useLocation,
-} from "react-router-dom";
+import { Switch, Route, useLocation } from "react-router-dom";
 import Home from "./components/Home";
 import East from "./components/East";
 import South from "./components/South";
 import West from "./components/West";
 import North from "./components/North";
+import Form from "./components/Form";
 
 import { AnimatePresence } from "framer-motion";
 
@@ -17,7 +14,6 @@ function App() {
 
 	return (
 		<div style={{ position: "relative" }}>
-		
 			<AnimatePresence>
 				<Switch location={location} key={location.pathname}>
 					<Route path="/" exact>
@@ -34,6 +30,9 @@ function App() {
 					</Route>
 					<Route path="/south" exact>
 						<South />
+					</Route>
+					<Route path="/form" exact>
+						<Form />
 					</Route>
 				</Switch>
 			</AnimatePresence>
