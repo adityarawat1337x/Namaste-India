@@ -225,4 +225,19 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-image: url("https://source.unsplash.com/cyYpC8-LuRU/1600x900");
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+}
+
+.formLink {
+	position: absolute;
+	top: 20px;
+	left: 90vw;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-weight: 600;
+	z-index: 100;
 }
