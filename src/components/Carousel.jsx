@@ -1,11 +1,23 @@
 import "./styles.css";
 
-const Carousel = () => {
+const Carousel = ({ cardData }) => {
   return (
     <div className="carousel">
-      <div className="box" id="one"></div>
-      <div className="box" id="two"></div>
-      <div className="box" id="three"></div>
+      {cardData.map((card) => {
+        return (
+          <div
+            className="box"
+            style={{
+              backgroundImage: `url(${card.dp})`,
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+            }}
+          >
+            <h3 id="title">{card.attraction}</h3>
+          </div>
+        );
+      })}
     </div>
   );
 };

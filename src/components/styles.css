@@ -126,7 +126,7 @@ color: rgb(80, 163, 196);
 	color: white;
 }
 
-
+/*Carousel*/
 .carousel {
   width: 100vw;
   height: 200px;
@@ -136,43 +136,51 @@ color: rgb(80, 163, 196);
   background: transparent;
 }
 
-
 @keyframes display {
   0% {
     transform: translateX(200px);
-    opacity: 0;
+    opacity: 0.5;
   }
   10% {
-    transform: translateX(0);
-    opacity: 1;
+    transform: translateX(0px);
+    opacity: 0.7;
   }
   20% {
-    transform: translateX(0);
+    transform: translateX(0px);
     opacity: 1;
   }
   30% {
-    transform: translateX(-200px);
+    transform: translateX(-150px);
     opacity: 0;
   }
   100% {
     transform: translateX(-200px);
+    background-position-x: -20px;
     opacity: 0;
   }
 }
 
-.carousel{
+.carousel {
   position: relative;
   width: 100vw;
   height: 300px;
   margin-top: 15vh;
 }
 
-.carousel > .box{
+.carousel > .box {
   position: absolute;
   top: 0;
   left: calc(50% - 100px);
   opacity: 0;
-  animation: display 10s infinite;
+  width: 300px;
+  animation: display 8s infinite;
+}
+
+.carousel > .box #title{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .box:nth-child(2) {
@@ -182,20 +190,14 @@ color: rgb(80, 163, 196);
   animation-delay: 4s;
 }
 
-
 .box {
   flex: 0 0 auto;
   margin: 20px 40px;
-  height: 200px;
-  min-width: 300px;
-}
-
-.carousel #one {
-  background-color: red;
-}
-.carousel #two {
-  background-color: green;
-}
-.carousel #three {
-  background-color: blue;
+  color: white;
+  height: 350px;
+  min-width: 250px;
+  border-radius: 8px;
+  -webkit-box-shadow: 1px 13px 29px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 13px 29px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 13px 29px -6px rgba(0, 0, 0, 0.75);
 }
