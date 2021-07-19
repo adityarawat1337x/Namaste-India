@@ -79,7 +79,7 @@ const Home = () => {
         className="bg"
         id="Home"
       >
-        <h1 className="region title">Welcome to India</h1>
+        <h1 className="region title">Welcome To India</h1>
         <VOD>
           <iframe
             src="https://player.vimeo.com/video/576718655?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
