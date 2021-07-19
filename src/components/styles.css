@@ -1,5 +1,5 @@
 body {
-	overflow-y: hidden;
+	overflow: hidden; /* Hide scrollbars */
 }
 
 .bg {
@@ -240,4 +240,31 @@ body {
 	font-size: 20px;
 	font-weight: 600;
 	z-index: 100;
+}
+
+@media (max-width: 500px) {
+	.carousel {
+		display: none;
+	}
+	.title {
+		font-size: 5em;
+		font-weight: 700;
+		color: rgba(255, 255, 255, 0.842);
+		position: absolute;
+		text-align: center;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 100;
+	}
+	.formLink {
+		position: absolute;
+		top: 20px;
+		left: 75vw;
+		text-decoration: none;
+		color: white;
+		font-size:16px;
+		font-weight: 600;
+		z-index: 100;
+	}
 }
