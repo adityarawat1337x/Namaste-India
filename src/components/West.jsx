@@ -3,11 +3,12 @@ import "./styles.css";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import { north } from "./Database";
+import { east } from "./Database";
 import ArrowBackRoundedIcon from "@material-ui/icons/ArrowBackRounded";
 import ArrowDownwardRoundedIcon from "@material-ui/icons/ArrowDownwardRounded";
 import ArrowForwardRoundedIcon from "@material-ui/icons/ArrowForwardRounded";
 import ArrowUpwardRoundedIcon from "@material-ui/icons/ArrowUpwardRounded";
+import Carousel from "./Carousel";
 
 const Container = styled.div`
 	display: flex;
@@ -58,11 +59,14 @@ const About = styled.div`
 	animation-duration: 1s;
 `;
 
-const Place = ({ s, d, city }) => {
+const Place = (props) => {
+	const { s, d, city, att } = props;
+	console.log(props);
 	return (
 		<Block>
 			<Item s={s}>
 				<About>{city}</About>
+				<Carousel cardData={att} />
 			</Item>
 		</Block>
 	);
@@ -95,7 +99,7 @@ const West = () => {
 	return (
 		<>
 			<NavLink className="arrow left" to="/" exact>
-				🡨
+				<ArrowBackRoundedIcon></ArrowBackRoundedIcon>
 			</NavLink>
 			<motion.div
 				style={{ position: "absolute" }}
@@ -109,7 +113,7 @@ const West = () => {
 			>
 				<h1 className="region westh1">West India</h1>{" "}
 				<Container>
-					{north.map((city, index) => (
+					{east.map((city, index) => (
 						<Place key={index} city={city.place} s={city.dp} d={city.desc} />
 					))}
 				</Container>

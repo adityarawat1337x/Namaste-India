@@ -4,11 +4,8 @@ import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { north } from "./Database";
-import ArrowBackRoundedIcon from '@material-ui/icons/ArrowBackRounded';
 import ArrowDownwardRoundedIcon from '@material-ui/icons/ArrowDownwardRounded';
-import ArrowForwardRoundedIcon from '@material-ui/icons/ArrowForwardRounded';
-import ArrowUpwardRoundedIcon from '@material-ui/icons/ArrowUpwardRounded';
-
+import Carousel from "./Carousel";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -46,11 +43,14 @@ const About = styled.div`
   background-color: rgba(0, 0, 0, 0.4);
 `;
 
-const Place = ({ s, d, attractions }) => {
+const Place = (props) => {
+  const { s, d, city, att } = props;
+  console.log(props);
   return (
     <Block>
       <Item s={s}>
-        <About>{d}</About>
+        <About>{city}</About>
+        <Carousel cardData={att} />
       </Item>
     </Block>
   );
@@ -85,7 +85,7 @@ const North = () => {
   return (
     <>
       <NavLink className="arrow down" to="/" exact>
-        🡫
+        <ArrowDownwardRoundedIcon />
       </NavLink>
       <motion.div
         style={{ position: "absolute" }}

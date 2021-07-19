@@ -3,7 +3,7 @@ import "./styles.css";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import { north } from "./Database";
+import { west } from "./Database";
 import Carousel from "./Carousel";
 import ArrowBackRoundedIcon from "@material-ui/icons/ArrowBackRounded";
 import ArrowDownwardRoundedIcon from "@material-ui/icons/ArrowDownwardRounded";
@@ -61,73 +61,73 @@ const About = styled.div`
 `;
 
 const pageVariant = {
-	initial: {
-		opacity: 0,
-		x: "-100%",
-		scale: 1.2,
-	},
-	in: {
-		opacity: 1,
-		x: "0",
-		scale: 1,
-	},
-	out: {
-		opacity: 0,
-		x: "-100%",
-		scale: 1.2,
-	},
+    initial: {
+        opacity: 0,
+        x: "-100%",
+        scale: 1.2,
+    },
+    in: {
+        opacity: 1,
+        x: "0",
+        scale: 1,
+    },
+    out: {
+        opacity: 0,
+        x: "-100%",
+        scale: 1.2,
+    },
 };
 
 const pageTransition = {
-	type: "tween",
-	ease: "easeOut",
-	duration: 0.5,
+    type: "tween",
+    ease: "easeOut",
+    duration: 0.5,
 };
 
 const Place = (props) => {
-	const { s, d, city, att } = props;
-	console.log(props);
-	return (
-		<Block>
-			<Item s={s}>
+    const { s, d, city, att } = props;
+    console.log(props);
+    return (
+        <Block>
+            <Item s={s}>
                 <About>{city}</About>
                 <Carousel cardData={att} />
-			</Item>
-		</Block>
-	);
+            </Item>
+        </Block>
+    );
 };
 
-console.log(north);
+// console.log(north);
 const East = () => {
-	return (
-		<>
-			<NavLink className="arrow right" to="/" exact>
-				<ArrowBackRoundedIcon />
-			</NavLink>
-			<motion.div
-				style={{ position: "absolute" }}
-				variants={pageVariant}
-				transition={pageTransition}
-				initial="initial"
-				animate="in"
-				exit="out"
-				className="bg east"
-				id="East"
-			>
-				<Container>
-					{north.map((city, index) => (
-						<Place
-							key={index}
-							city={city.place}
-							s={city.dp}
-							d={city.desc}
-							att={city.attractions}
-						/>
-					))}
-				</Container>
-			</motion.div>
-		</>
-	);
+    return (
+        <>
+            <NavLink className="arrow right" to="/" exact>
+                <ArrowForwardRoundedIcon />
+            </NavLink>
+            <motion.div
+                style={{ position: "absolute" }}
+                variants={pageVariant}
+                transition={pageTransition}
+                initial="initial"
+                animate="in"
+                exit="out"
+                className="bg east"
+                id="East"
+            >
+                <Container>
+                    {west.map((city, index) => (
+                        <Place
+                            key={index}
+                            city={city.place}
+                            s={city.dp}
+                            d={city.desc}
+                            att={city.attractions}
+                        />
+                    ))}
+                </Container>
+            </motion.div>
+        </>
+    );
 };
 
 export default East;

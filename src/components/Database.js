@@ -280,7 +280,7 @@ const west = [
 		],
 	},
 	{
-		place: "Gujrat",
+		place: "Gujarat",
 		dp: gujratbg,
 		desc:
 			"The Land of the Legends, stands bordered by Pakistan and Rajasthan in the north east, Madhya Pradesh in the east, and Maharashtra and the Union territories of Diu, Daman, Dadra and Nagar Haveli in the south. The Arabian Sea borders the state both to the west and the south west.The State took it’s name from the Gujjars, who ruled the area during the 700’s and 800’s. Stone Age settlements around Sabarmati and Mahi rivers indicate the same time as that of the Indus Valley Civilization while Harappan centres are also found at Lothal, Rampur, Amri and other places.",
@@ -329,4 +329,4 @@ const west = [
 	},
 ];
 
-export { north, south,east, west };
+export { north, south, east, west };

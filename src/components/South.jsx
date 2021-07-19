@@ -3,12 +3,9 @@ import "./styles.css"
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import styled from 'styled-components';
-import { north } from './Database';
-import ArrowBackRoundedIcon from '@material-ui/icons/ArrowBackRounded';
-import ArrowDownwardRoundedIcon from '@material-ui/icons/ArrowDownwardRounded';
-import ArrowForwardRoundedIcon from '@material-ui/icons/ArrowForwardRounded';
+import { south } from './Database';
 import ArrowUpwardRoundedIcon from '@material-ui/icons/ArrowUpwardRounded';
-
+import Carousel from "./Carousel";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -61,11 +58,14 @@ const About = styled.div`
 
 
 
-const Place = ({ s, d, city }) => {
+const Place = (props) => {
+    const { s, d, city, att } = props;
+    console.log(props);
     return (
         <Block>
             <Item s={s}>
                 <About>{city}</About>
+                <Carousel cardData={att} />
             </Item>
         </Block>
     );
@@ -95,13 +95,13 @@ const South = () => {
         ease: "easeOut",
         duration: .5
     };
-    
+
     return (<><NavLink className="arrow up" to="/" exact>
-        🡩
+        <ArrowUpwardRoundedIcon />
     </NavLink>
         <motion.div style={{ position: "absolute" }} variants={pageVariant} transition={pageTransition} initial="initial" animate="in" exit="out" className="bg south" id="South">
             <h1 className="region southh1">South India</h1> <Container>
-                {north.map((city, index) => (
+                {south.map((city, index) => (
                     <Place key={index} city={city.place} s={city.dp} d={city.desc} />
                 ))}
             </Container>
