@@ -1,9 +1,14 @@
 import React from "react";
 import "./styles.css";
-import { motion  } from "framer-motion";
+import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import { north  } from "./Database";
+import { north } from "./Database";
+import ArrowBackRoundedIcon from "@material-ui/icons/ArrowBackRounded";
+import ArrowDownwardRoundedIcon from "@material-ui/icons/ArrowDownwardRounded";
+import ArrowForwardRoundedIcon from "@material-ui/icons/ArrowForwardRounded";
+import ArrowUpwardRoundedIcon from "@material-ui/icons/ArrowUpwardRounded";
+
 const Container = styled.div`
 	display: flex;
 	flex-direction: column;
@@ -13,7 +18,7 @@ const Container = styled.div`
 `;
 const Block = styled.div`
 	scroll-snap-align: start;
-	background- size: cover;
+	background-size: cover;
 	position: relative;
 `;
 
@@ -53,15 +58,14 @@ const About = styled.div`
 	animation-duration: 1s;
 `;
 
-
 const Place = ({ s, d, city }) => {
-    return (
-        <Block>
-            <Item s={s}>
-                <About>{city}</About>
-            </Item>
-        </Block>
-    );
+	return (
+		<Block>
+			<Item s={s}>
+				<About>{city}</About>
+			</Item>
+		</Block>
+	);
 };
 
 const West = () => {

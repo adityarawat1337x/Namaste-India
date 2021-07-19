@@ -108,12 +108,16 @@ body {
 }
 
 .title {
-	font-size: 11em;
+	font-size: 10em;
 	font-weight: 900;
 	color: rgba(255, 255, 255, 0.664);
 	position: absolute;
-	bottom: 20px;
-	margin-left: 40px;
+	text-align: center;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index:100;
+	
 }
 
 .northh1 {
@@ -142,6 +146,12 @@ body {
 .carousel {
   width: 100vw;
   height: 200px;
+  position: absolute;
+  left:10%;
+  top:40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .carousel::-webkit-scrollbar {
   width: 0;
@@ -172,12 +182,7 @@ body {
   }
 }
 
-.carousel {
-  position: relative;
-  width: 100vw;
-  height: 300px;
-  margin-top: 15vh;
-}
+
 
 .carousel > .box {
   position: absolute;
@@ -212,4 +217,12 @@ body {
   -webkit-box-shadow: 1px 13px 29px -6px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 1px 13px 29px -6px rgba(0, 0, 0, 0.75);
   box-shadow: 1px 13px 29px -6px rgba(0, 0, 0, 0.75);
+}
+
+.form{
+	width:100vw;
+	height:100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }

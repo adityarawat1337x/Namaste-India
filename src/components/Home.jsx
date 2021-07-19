@@ -3,6 +3,11 @@ import "./styles.css";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components"
+import ArrowBackRoundedIcon from '@material-ui/icons/ArrowBackRounded';
+import ArrowDownwardRoundedIcon from '@material-ui/icons/ArrowDownwardRounded';
+import ArrowForwardRoundedIcon from '@material-ui/icons/ArrowForwardRounded';
+import ArrowUpwardRoundedIcon from '@material-ui/icons/ArrowUpwardRounded';
+
 const VOD = styled.div`
   position: fixed;
   top: 0;
@@ -50,16 +55,16 @@ const Home = () => {
   return (
     <>
       <NavLink className="arrow left" to="/east" exact>
-        🡨
+        < ArrowBackRoundedIcon />
       </NavLink>
       <NavLink className="arrow right" to="/west" exact>
-        🡪
+        <ArrowForwardRoundedIcon />
       </NavLink>
       <NavLink className="arrow up" to="/north" exact>
-        🡡
+        <ArrowUpwardRoundedIcon />
       </NavLink>
       <NavLink className="arrow down" to="/south" exact>
-        🡫
+        <ArrowDownwardRoundedIcon />
       </NavLink>
       <NavLink className="formLink" to="/form" exact>
         Contact Us
@@ -74,7 +79,7 @@ const Home = () => {
         className="bg"
         id="Home"
       >
-        <h1 className="region title">India</h1>
+        <h1 className="region title">Welcome to India</h1>
         <VOD>
           <iframe
             src="https://player.vimeo.com/video/576718655?background=1&autoplay=1&loop=1&byline=0&title=0"
